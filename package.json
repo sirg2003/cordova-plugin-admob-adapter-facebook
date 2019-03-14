@@ -1,0 +1,37 @@
+{
+  "author": {
+    "name": "Sergey Rogozov",
+    "url": "https://github.com/sirg2003"
+  },
+  "bugs": {
+    "url": "https://github.com/sirg2003/cordova-plugin-admob-adapter-facebook/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-admob-adapter-facebook",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "AdMob Mediation Adapter for Facebook Audience Network",
+  "homepage": "https://github.com/sirg2003/cordova-plugin-admob-adapter-facebook",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "plugin",
+    "ad",
+    "admob",
+    "facebook",
+    "mediation"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-admob-adapter-facebook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirg2003/cordova-plugin-admob-adapter-facebook.git"
+  },
+  "version": "1.0.0"
+}

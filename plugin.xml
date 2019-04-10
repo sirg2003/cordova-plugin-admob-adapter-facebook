@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-admob-adapter-facebook"
-    version="1.0.0">
+    version="1.0.1">
 
     <name>AdMob Mediation Adapter for Facebook Audience Network</name>
     <description>AdMob Mediation Adapter for Facebook Audience Network</description>
@@ -12,8 +12,16 @@
     <license>MIT</license>
 
     <platform name="android">
-        <framework src="com.facebook.android:audience-network-sdk:4.+" />
-        <framework src="com.google.ads.mediation:facebook:4.+" />
+        <framework src="com.facebook.android:audience-network-sdk:5.2.0" />
+        <framework src="com.google.ads.mediation:facebook:5.2.0.1" />
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+          <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+          <uses-permission android:name="android.permission.INTERNET" />
+          <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
     </platform>
 
     <platform name="ios">
